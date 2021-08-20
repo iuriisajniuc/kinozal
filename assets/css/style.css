@@ -1,0 +1,71 @@
+.header-logo__description, .header-logo__title {
+  text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000;
+}
+
+.navbar-inverse {
+  background-color: #191919;
+  border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #053159;
+}
+
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #517ba2;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+  background-color: #165690;
+}
+
+.navbar-left > li {
+  margin: 5px 5px 5px 5px;
+}
+
+.navbar-right > li {
+  margin: 5px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+  min-height: 101vh;
+}
+
+a {
+  color: #165690;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  color: #df8a13;
+}
+
+.header-logo {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #232323;
+  background-image: url(../img/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.header-logo__title {
+  display: block;
+  color: #df8a13;
+  font-size: 3.5rem;
+  font-family: "PT Serif", serif;
+  letter-spacing: 0.33em;
+  margin-right: -0.33em;
+}
+.header-logo__description {
+  display: block;
+  color: #ffffff;
+  font-size: 1.15rem;
+  letter-spacing: 0.2em;
+}

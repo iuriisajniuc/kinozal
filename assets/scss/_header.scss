@@ -1,0 +1,29 @@
+// .header {
+// }
+
+.header-logo {
+  padding: 100px 0;
+  text-align: center;
+  background-color: $color-dark;
+  background-image: url(../img/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    display: block;
+    color: $color-accent;
+    @extend %text-shadow;
+    font-size: 3.5rem;
+    font-family: $font-header;
+    letter-spacing: 0.33em;
+    margin-right: -0.33em;
+  }
+
+  &__description {
+    display: block;
+    color: $color-white;
+    @extend %text-shadow;
+    font-size: 1.15rem;
+    letter-spacing: 0.2em;
+  }
+}

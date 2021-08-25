@@ -1,6 +1,8 @@
 .navbar-inverse {
-  background-color: $color-deep-dark;
+  margin-bottom: 0;
+
   border-color: transparent;
+  background-color: $color-deep-dark;
   .navbar-nav > {
     .active > a {
       background-color: $color-primary-dark;
@@ -10,8 +12,10 @@
       }
     }
     li > a {
-      border-radius: 4px;
       transition: background-color 0.5s, color 0.5s;
+
+      border-radius: 4px;
+
       @include sm {
         text-align: center;
       }
@@ -29,7 +33,7 @@
   }
   @include sm-min {
     > li {
-      margin: 5px 5px 5px 0px;
+      margin: 5px 5px 5px 0;
     }
   }
 }
@@ -39,7 +43,7 @@
   }
   @include sm-min {
     > li {
-      margin: 5px 0px 5px 5px;
+      margin: 5px 0 5px 5px;
     }
   }
 }
@@ -49,5 +53,49 @@
 
 .navbar-toggle {
   float: none;
+
   margin-right: 0;
+}
+
+.panel {
+  background-color: $color-gray-light;
+  box-shadow: none;
+
+  &:not(:last-of-type) {
+    margin-bottom: $gap * 2;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &-body {
+    border: 1px solid $color-gray;
+    border-radius: 0 0 4px 4px;
+  }
+
+  &-info {
+    border: none;
+
+    > .panel-heading {
+      letter-spacing: 0.08em;
+      border: none;
+
+      color: $color-white;
+      border-color: none;
+      background-color: $color-accent;
+
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.input {
+  &-lg,
+  &-group-lg > .form-control {
+    font-size: 0.875rem;
+  }
+}
+
+.thumbnail {
+  transition: background-color 0.5s;
 }

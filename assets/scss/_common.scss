@@ -2,11 +2,13 @@ html {
   font-size: $font-size;
 }
 body {
-  font-size: $font-size;
-  font-family: $font-main;
-  min-height: 101vh;
-  max-width: 100%;
   overflow-x: hidden;
+
+  max-width: 100%;
+  min-height: 101vh;
+
+  font-family: $font-main;
+  font-size: $font-size;
 }
 
 a {
@@ -15,6 +17,61 @@ a {
   &:hover,
   &:focus {
     text-decoration: none;
+
     color: $color-accent;
   }
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  margin: -$gap-md 0 1em 0;
+  font-size: 3rem;
+  font-family: $font-header;
+  @include xs {
+    font-size: 2rem;
+    margin: 0 0 1em 0;
+  }
+  &::after {
+    position: absolute;
+    width: 100%;
+    content: "";
+    border-bottom: 3px solid $color-accent-light;
+    margin: 0.85em 0 0 15px;
+  }
+}
+
+h2 {
+  margin: 60px 0 45px 45px;
+  font-size: 2.5rem;
+  font-family: $font-header;
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    content: "";
+    border-bottom: 3px solid $color-accent-light;
+    margin: 0.85em 0 0 15px;
+  }
+
+  &::before {
+    position: absolute;
+    width: 30px;
+    content: "";
+    border-top: 3px solid $color-accent-light;
+    margin: 0.25em 0 0 0;
+    left: 0;
+  }
+
+  @include xs {
+    font-size: 1.75rem;
+    margin: 45px 0 30px 45px;
+  }
+}
+
+h3 > a {
+  transition: background-color 2s;
 }

@@ -13,10 +13,15 @@
     display: block;
     color: $color-accent;
     @extend %text-shadow;
-    font-size: 3.5rem;
     font-family: $font-header;
     letter-spacing: 0.33em;
     margin-right: -0.33em;
+    @include xs-min {
+      font-size: 3.5rem;
+    }
+    @include xs {
+      font-size: 2.5rem;
+    }
   }
 
   &__description {

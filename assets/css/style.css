@@ -188,6 +188,15 @@ h3 > a {
   padding-right: 7.5px;
   padding-left: 7.5px;
 }
+.new-films-item:hover .thumbnail,
+.top-week-item:hover .thumbnail {
+  background-color: #df8a13;
+  border-color: #df8a13;
+}
+.new-films-item:hover .thumbnail h3,
+.top-week-item:hover .thumbnail h3 {
+  color: #ffffff;
+}
 .new-films-item__title,
 .top-week-item__title {
   margin: 0;
@@ -200,14 +209,6 @@ h3 > a {
 .new-films-item__thumbnail,
 .top-week-item__thumbnail {
   margin-bottom: 0;
-}
-.new-films-item__thumbnail:hover,
-.top-week-item__thumbnail:hover {
-  background-color: #df8a13;
-}
-.new-films-item__thumbnail:hover h3,
-.top-week-item__thumbnail:hover h3 {
-  color: #ffffff;
 }
 .new-films-item__caption,
 .top-week-item__caption {
@@ -229,6 +230,7 @@ h3 > a {
 }
 .news-item:hover .thumbnail {
   background-color: #df8a13;
+  border-color: #df8a13;
 }
 .news-item:hover .btn {
   background-color: #df8a13;

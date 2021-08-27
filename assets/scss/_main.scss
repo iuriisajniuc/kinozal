@@ -19,6 +19,15 @@
   }
 
   &-item {
+    &:hover {
+      .thumbnail {
+        background-color: $color-accent;
+        border-color: $color-accent;
+        h3 {
+          color: $color-white;
+        }
+      }
+    }
     margin-bottom: $gap;
     padding-right: $gap-sm;
     padding-left: $gap-sm;
@@ -31,12 +40,6 @@
 
     &__thumbnail {
       margin-bottom: 0;
-      &:hover {
-        background-color: $color-accent;
-        h3 {
-          color: $color-white;
-        }
-      }
     }
 
     &__caption {
@@ -63,6 +66,7 @@
       }
       .thumbnail {
         background-color: $color-accent;
+        border-color: $color-accent;
       }
 
       .btn {

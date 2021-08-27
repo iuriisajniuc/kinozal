@@ -5,10 +5,10 @@
     border-radius: 0 0 4px 4px;
   }
   &__wrapper {
+    white-space: nowrap;
     &:not(:last-of-type) {
       margin-right: 15px;
     }
-    white-space: nowrap;
   }
   &__badge {
     font-size: 0.8em;
@@ -17,9 +17,9 @@
 
 .film-comments-form {
   &__comment {
-    min-height: 100px;
     min-width: 30%;
     max-width: 100%;
+    min-height: 100px;
   }
 
   &__button {
